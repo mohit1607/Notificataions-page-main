@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;800&display=swap');
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 100%;
+}
+
+main{
+    background: hsl(210, 60%, 98%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: white;
+    width: 46rem;
+    margin-top: 4rem;
+    padding-inline: 2rem;
+    padding-top: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+}
+.notification{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.notification__box{
+    display: flex;
+    color: hsl(224, 21%, 14%);
+    gap: 1rem;
+}
+.notification__box__count{
+    display: flex;
+    background: hsl(224, 21%, 14%);
+    justify-content: center;
+    align-self: center;
+    color: white;
+    font-weight: bold;
+    width: 2rem;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+}
+.notification2{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.node{
+    background: hsl(210, 60%, 98%);
+    height: auto;
+    display: flex;
+    gap: 1.1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+}
+
+
+.node2{
+    display: flex;
+    gap: 1.1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+}
+.pic{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.image{
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+.content{
+    width: 100%;
+}
+.msg{ 
+    width: 100%;
+    align-items: center;
+    color: hsl(219, 12%, 42%);
+    cursor: zoom-in;
+}
+
+.node .msg{
+display: flex;
+}
+.special{
+    font-weight: 800;
+    color: hsl(224, 21%, 14%);
+    margin-right: 0.3rem;
+    cursor: pointer;
+}
+.special2{
+    font-weight: bolder;
+    cursor: pointer;
+    color: hsl(219, 12%, 42%);
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+.time{
+    margin-top: 0.3rem;
+    font-weight: 400;
+    color: hsl(219, 14%, 63%);
+}
+.dot{
+    background-color: red;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    margin-left: 0.6rem;
+}
+.msgBox{
+    border: 0.5px solid hsl(205, 33%, 90%);
+    margin-top: 0.7rem;
+    width: 100%;
+    height: auto;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.msgBox:hover{
+    background: hsl(205, 33%, 90%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    .notification{
+        flex-wrap: wrap;
+    }
+    .node .msg{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .dot{
+        position: relative;
+        top: 0.5rem;
+    }
+}
